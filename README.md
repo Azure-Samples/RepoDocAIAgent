@@ -1,0 +1,183 @@
+# RepoDocAIAgent - Java Repository Documentation Generator
+
+Working repo for Microsoft AI Agents Hack 2025 session: AI Agents for Java using Azure AI Foundry and GitHub Copilot.
+
+Check out the recording of how this repo was created here: 
+https://www.youtube.com/live/tIboGwcr7w0?si=Qe4C02G-wfOXBaLf
+
+The recording shows the process of coming up with an idea on ChatGPT using open AI for 4.5, then moving over to VS code to ask Claude sonnet 3.7 to enhance the prompt, which it did with a 386 line prompt! 
+
+RepoDocAIAgent is an intelligent Java documentation generator that automatically analyzes Java repositories and creates comprehensive, professional-grade documentation using Azure OpenAI services. The agent leverages LangChain4J and advanced AI prompting to generate documentation that follows Oracle's Java documentation standards.
+
+## 🚀 Features
+
+- **Automatic Repository Analysis**: Clones and analyzes any public GitHub Java repository
+- **AI-Powered Documentation**: Uses Azure OpenAI to generate intelligent, contextual documentation
+- **Professional Output**: Creates documentation following industry best practices
+- **Comprehensive Coverage**: Generates project overviews, API docs, getting started guides, and FAQs
+- **Easy Integration**: Simple command-line interface for quick documentation generation
+
+## 📋 Prerequisites
+
+- **Java 21** JDK or higher
+- **Maven 3.x** for building the project
+- **Azure OpenAI** subscription and API access
+- **Git** for repository operations
+- **GitHub Token** (optional, for private repositories)
+
+## ⚙️ Configuration
+
+### 1. Create Environment Variables
+
+Create a `.env` file in the project root with your Azure OpenAI credentials:
+
+```bash
+# Azure OpenAI Configuration (Required)
+AZURE_OPENAI_ENDPOINT=https://your-azure-openai-resource.openai.azure.com/
+AZURE_OPENAI_API_KEY=your_api_key_here
+AZURE_OPENAI_DEPLOYMENT_ID=your_deployment_id
+AZURE_OPENAI_API_VERSION=2023-05-15
+
+# Documentation Output Directory (Required)
+documentdestination=C:/githublocal/RepoDocAIAgent
+
+# GitHub Access (Optional - for private repositories)
+GITHUB_TOKEN=your_github_token_here
+```
+
+### 2. Azure OpenAI Setup
+
+1. Create an Azure OpenAI resource in the Azure portal
+2. Deploy a GPT model (recommended: GPT-4 or GPT-3.5-turbo)
+3. Copy the endpoint, API key, and deployment ID to your `.env` file
+
+## 🔧 Building the Project
+
+Build the project using Maven:
+
+```bash
+mvn clean install
+```
+
+This creates a shaded JAR file: `target/java-documentation-agent-1.0-SNAPSHOT.jar`
+
+## 🎯 Usage
+
+### Basic Usage
+
+Run the application with a GitHub repository URL:
+
+```bash
+java -jar target/java-documentation-agent-1.0-SNAPSHOT.jar <repository-url>
+```
+
+### Examples
+
+```bash
+# Public repository
+java -jar target/java-documentation-agent-1.0-SNAPSHOT.jar https://github.com/bbenz/azure-javaweb-app
+
+# Repository with .git extension
+java -jar target/java-documentation-agent-1.0-SNAPSHOT.jar https://github.com/spring-projects/spring-boot.git
+```
+
+## 📁 Output Structure
+
+The application generates documentation in the following structure:
+
+```
+{documentdestination}/{repository-name}/
+├── <cloned repository contents>  # Source code
+    └── ...
+└── RepoDocAIAgent/               # Generated Documentation
+    └── ...
+```
+
+### Documentation Content
+
+Each generated document includes:
+
+**README.md**
+- Project overview and description
+- Architecture analysis
+- Key classes and components
+- Usage examples
+
+**getting-started.md**
+- Installation instructions
+- Quick start guide
+- Configuration details
+- Basic usage examples
+
+**api/{ClassName}.md**
+- Complete class documentation
+- Method descriptions and parameters
+- Usage examples
+- Best practices
+
+**faq.md**
+- Common questions and answers
+- Troubleshooting guide
+- Known issues and solutions
+
+## 🔍 How It Works
+
+1. **Repository Cloning**: The application clones the specified GitHub repository to a local directory
+2. **Java File Discovery**: Scans the repository for all `.java` files
+3. **Code Analysis**: Uses JavaParser to extract class, method, and field information
+4. **AI Documentation Generation**: Sends structured prompts to Azure OpenAI for intelligent documentation generation
+5. **Output Generation**: Creates organized Markdown files with professional documentation
+
+## 🛠️ Troubleshooting
+
+### Common Issues
+
+**Authentication Errors**
+- Verify your Azure OpenAI credentials in the `.env` file
+- Ensure your API key has proper permissions
+- Check that your deployment ID matches your Azure OpenAI model deployment
+
+**Build Failures**
+- Ensure Java 21 is installed and configured
+- Verify Maven is properly installed
+- Run `mvn clean install` to rebuild dependencies
+
+**Repository Access Issues**
+- For private repositories, ensure your GitHub token has appropriate permissions
+- Verify the repository URL is correct and accessible
+
+### Environment Variables
+
+If you encounter issues with environment variables:
+
+```bash
+# Verify your .env file exists and contains required variables
+cat .env
+
+# Check Java system properties
+java -jar target/java-documentation-agent-1.0-SNAPSHOT.jar --debug
+```
+
+## 🤝 Contributing
+
+This project was created during the Microsoft AI Agents Hack 2025. Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🔗 Related Links
+
+- **Original AgentsHack Session**: [Microsoft AI Agents Hack April 8-30th, 2025](https://techcommunity.microsoft.com/blog/azuredevcommunityblog/microsoft-ai-agents-hack-april-8-30th-2025/4395595)
+- **Session Recording**: [AI Agents for Java using Azure AI Foundry](https://developer.microsoft.com/en-us/reactor/events/25336/)
+- **Shortlink**: https://aka.ms/AIAgentsforJava
+
+---
+
+*Built with ❤️ using Azure AI Foundry, LangChain4J, and GitHub Copilot*
+
