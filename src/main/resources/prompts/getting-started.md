@@ -48,3 +48,12 @@ Dependency Information: {{dependencies}}
 
 # Output Format
 Provide ONLY the complete Getting Started guide in valid Markdown format. Do not include meta-commentary.
+# Output Format
+Provide ONLY the complete class documentation in valid Markdown format. Do not include meta-commentary. 
+# Output Format
+Start your response immediately with the markdown content - no preamble, no code blocks, no explanations.
+**CRITICAL**: Do NOT wrap your entire response in ```markdown code blocks. 
+Your response should start directly with:
+# [Project Title]
+And continue with raw markdown content.
+Only use code blocks (```) for actual code examples within the documentation, not to wrap the entire response.
