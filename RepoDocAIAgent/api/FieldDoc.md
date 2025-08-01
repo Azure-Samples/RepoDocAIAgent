@@ -2,12 +2,12 @@
 # FieldDoc Class Documentation
 
 ## Overview
-The `FieldDoc` class, part of the `com.documentor.agent.model` package, represents documentation for a field in a Java class. It encapsulates metadata about a field, including its name, type, visibility, modifiers, initial value, and annotations. This class is designed to be used in tools or systems that analyze and generate documentation for Java codebases.
+The `FieldDoc` class, part of the `com.repodocaiagent.agent.model` package, represents documentation for a field in a Java class. It encapsulates metadata about a field, including its name, type, visibility, modifiers, initial value, and annotations. This class is designed to be used in tools or systems that analyze and generate documentation for Java codebases.
 
 The class is annotated with Lombok's `@Data` and `@Builder`, which automatically generate boilerplate code such as getters, setters, `toString()`, `equals()`, `hashCode()`, and a builder pattern implementation. This makes the class easy to use and integrate into larger systems.
 
 ## Class Hierarchy
-- **Package:** `com.documentor.agent.model`
+- **Package:** `com.repodocaiagent.agent.model`
 - **Class Name:** `FieldDoc`
 - **Type:** Concrete Class
 - **Inheritance:** None (does not extend any class)
@@ -18,7 +18,7 @@ The `FieldDoc` class does not explicitly define constructors. Instead, construct
 
 ### Example Usage of Builder
 ```java
-import com.documentor.agent.model.FieldDoc;
+import com.repodocaiagent.agent.model.FieldDoc;
 
 import java.util.Map;
 

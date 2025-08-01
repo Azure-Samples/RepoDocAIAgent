@@ -2,10 +2,10 @@
 # GitHubService Class Documentation
 
 ## Overview
-The `GitHubService` class, part of the `com.documentor.agent.service` package, provides functionality for interacting with GitHub repositories. It allows users to clone repositories to a local directory, clean up temporary directories, and extract repository names from GitHub URLs. This service is designed to handle both public and private repositories, leveraging authentication via a GitHub token when necessary.
+The `GitHubService` class, part of the `com.repodocaiagent.agent.service` package, provides functionality for interacting with GitHub repositories. It allows users to clone repositories to a local directory, clean up temporary directories, and extract repository names from GitHub URLs. This service is designed to handle both public and private repositories, leveraging authentication via a GitHub token when necessary.
 
 ## Class Hierarchy
-- **Package**: `com.documentor.agent.service`
+- **Package**: `com.repodocaiagent.agent.service`
 - **Class**: `GitHubService`
   - **Type**: Concrete class (not abstract)
   - **Inheritance**: None (does not extend any class)
@@ -136,7 +136,7 @@ System.out.println("Repository name: " + repoName);
 ## Example Workflow
 ```java
 import io.github.cdimascio.dotenv.Dotenv;
-import com.documentor.agent.service.GitHubService;
+import com.repodocaiagent.agent.service.GitHubService;
 import org.eclipse.jgit.api.errors.GitAPIException;
 
 import java.io.IOException;

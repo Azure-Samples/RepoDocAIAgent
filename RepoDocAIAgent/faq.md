@@ -25,7 +25,7 @@ A: Follow these steps to set up the repository:
    ```
 4. Run the application:
    ```bash
-   java -cp out com.example.DocumentorApplication
+   java -cp out com.example.repodocaiagentApplication
    ```
 
 #### **Q: Are there any external dependencies required?**
@@ -37,28 +37,28 @@ A: No, the repository does not rely on any external dependencies. It uses only c
 
 #### **Q: What are the primary entry points for using this library?**
 A: The main public API classes are:
-- `DocumentorApplication`: Use this class to generate documentation.
+- `repodocaiagentApplication`: Use this class to generate documentation.
 - `AzureOpenAiService`: Use this class to interact with Azure OpenAI services.
 - `GitHubService`: Use this class to interact with GitHub repositories.
 
-#### **Q: How do I use the `DocumentorApplication` class?**
+#### **Q: How do I use the `repodocaiagentApplication` class?**
 A: Here’s an example:
 ```java
-import com.example.DocumentorApplication;
+import com.example.repodocaiagentApplication;
 
 public class Main {
     public static void main(String[] args) {
-        DocumentorApplication app = new DocumentorApplication();
+        repodocaiagentApplication app = new repodocaiagentApplication();
         app.generateDocumentation("path/to/repository");
     }
 }
 ```
 
-#### **Q: How do I handle file paths in `DocumentorApplication`?**
+#### **Q: How do I handle file paths in `repodocaiagentApplication`?**
 A: Always use absolute paths to avoid `FileNotFoundException`. For example:
 ```java
 String repoPath = "/absolute/path/to/repository";
-DocumentorApplication app = new DocumentorApplication();
+repodocaiagentApplication app = new repodocaiagentApplication();
 app.generateDocumentation(repoPath);
 ```
 
@@ -159,7 +159,7 @@ service.connect();
      ```
   3. On Windows, adjust the file properties to allow full control.
 
-#### **Error: `NullPointerException` in `DocumentorApplication`**
+#### **Error: `NullPointerException` in `repodocaiagentApplication`**
 - **Cause**: A null value was passed to a method.
 - **Solution**:
   1. Check the input arguments to ensure they are not null.

@@ -1,8 +1,8 @@
 ```markdown
-# Class Documentation: `com.documentor.agent.DocumentorApplication`
+# Class Documentation: `com.repodocaiagent.agent.repodocaiagentApplication`
 
 ## Class Overview
-The `DocumentorApplication` class serves as the main entry point for the Java Documentation AI Agent. This application is designed to autonomously generate high-quality documentation for Java repositories by leveraging LangChain4J and Azure OpenAI services. It orchestrates the entire process, including repository cloning, Java file parsing, and documentation generation.
+The `repodocaiagentApplication` class serves as the main entry point for the Java Documentation AI Agent. This application is designed to autonomously generate high-quality documentation for Java repositories by leveraging LangChain4J and Azure OpenAI services. It orchestrates the entire process, including repository cloning, Java file parsing, and documentation generation.
 
 This class is a standalone utility with no inheritance or implemented interfaces. It is designed to be executed as a command-line application.
 
@@ -42,7 +42,7 @@ This class does not define any constructors. The default no-argument constructor
   ```java
   // Run the application with a GitHub repository URL as an argument
   String[] args = {"https://github.com/username/repo.git"};
-  DocumentorApplication.main(args);
+  repodocaiagentApplication.main(args);
   ```
 - **Details**:
   - Validates the presence of a GitHub repository URL in the command-line arguments.
@@ -66,7 +66,7 @@ This class does not define any constructors. The default no-argument constructor
 - **Usage Example**:
   ```java
   String repoUrl = "https://github.com/username/repo.git";
-  String repoName = DocumentorApplication.extractRepositoryName(repoUrl);
+  String repoName = repodocaiagentApplication.extractRepositoryName(repoUrl);
   System.out.println(repoName); // Output: username/repo
   ```
 - **Details**:

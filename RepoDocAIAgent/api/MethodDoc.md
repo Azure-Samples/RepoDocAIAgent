@@ -2,10 +2,10 @@
 # Class Documentation: `MethodDoc`
 
 ## Overview
-The `MethodDoc` class, part of the `com.documentor.agent.model` package, represents the documentation details of a method in a Java class. It encapsulates metadata about a method, including its name, description, return type, parameters, exceptions, annotations, and other relevant attributes. This class is designed to facilitate the generation and management of method-level documentation in Java projects.
+The `MethodDoc` class, part of the `com.repodocaiagent.agent.model` package, represents the documentation details of a method in a Java class. It encapsulates metadata about a method, including its name, description, return type, parameters, exceptions, annotations, and other relevant attributes. This class is designed to facilitate the generation and management of method-level documentation in Java projects.
 
 ## Class Hierarchy
-- **Package**: `com.documentor.agent.model`
+- **Package**: `com.repodocaiagent.agent.model`
 - **Class**: `MethodDoc`
   - **Type**: Concrete class
   - **Inheritance**: None (does not extend any class)

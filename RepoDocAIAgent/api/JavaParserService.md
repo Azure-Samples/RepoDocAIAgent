@@ -5,7 +5,7 @@
 `JavaParserService` is a service class designed to parse Java source files and extract relevant documentation data. It provides functionality to locate Java files within a repository, parse their contents, and extract structured metadata such as class details, fields, methods, annotations, and Javadoc comments. This class is particularly useful for building tools that analyze Java codebases, such as documentation generators or static analysis tools.
 
 ## Package
-`com.documentor.agent.service`
+`com.repodocaiagent.agent.service`
 
 ## Class Hierarchy
 - **Superclass**: None
@@ -38,7 +38,7 @@ Finds all Java files in the specified repository path. This method recursively t
 
 #### Example
 ```java
-import com.documentor.agent.service.JavaParserService;
+import com.repodocaiagent.agent.service.JavaParserService;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.List;
@@ -67,8 +67,8 @@ Parses a Java file and extracts structured documentation data about the primary 
 
 #### Example
 ```java
-import com.documentor.agent.service.JavaParserService;
-import com.documentor.agent.model.JavaClassDoc;
+import com.repodocaiagent.agent.service.JavaParserService;
+import com.repodocaiagent.agent.model.JavaClassDoc;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 

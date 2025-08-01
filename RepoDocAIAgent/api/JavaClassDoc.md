@@ -11,7 +11,7 @@ The class is immutable and follows the builder pattern for object creation, ensu
 
 ## Package
 
-`com.documentor.agent.model`
+`com.repodocaiagent.agent.model`
 
 ---
 

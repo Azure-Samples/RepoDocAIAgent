@@ -15,17 +15,17 @@ AI Agents for Java is an advanced tool designed to autonomously generate high-qu
 
 The repository is structured into three main packages:
 
-1. **com.documentor.agent**:
-   - Contains the main application class, `DocumentorApplication`, which serves as the entry point for the tool.
+1. **com.repodocaiagent.agent**:
+   - Contains the main application class, `repodocaiagentApplication`, which serves as the entry point for the tool.
 
-2. **com.documentor.agent.model**:
+2. **com.repodocaiagent.agent.model**:
    - Defines the core data models used for documentation generation:
      - `FieldDoc`: Represents documentation for a field in a Java class.
      - `JavaClassDoc`: Represents a Java class or interface with its documentation details.
      - `MethodDoc`: Represents a method in a Java class with its documentation details.
      - `ParameterDoc`: Represents a method parameter with its documentation details.
 
-3. **com.documentor.agent.service**:
+3. **com.repodocaiagent.agent.service**:
    - Implements the core services for functionality:
      - `AzureOpenAiService`: Configures and provides access to Azure OpenAI's language models.
      - `GitHubService`: Handles GitHub repository operations.

@@ -48,7 +48,7 @@ Follow these steps to set up the project:
 4. **Run the Application**:
    Start the main application:
    ```bash
-   java -cp target/AI-Agents-for-Java-1.0-SNAPSHOT.jar com.documentor.agent.DocumentorApplication
+   java -cp target/AI-Agents-for-Java-1.0-SNAPSHOT.jar com.repodocaiagent.agent.repodocaiagentApplication
    ```
 
 ---
@@ -59,12 +59,12 @@ This section provides a simple example to get you started with the AI Documentat
 
 ### Step 1: Parse a Java Repository
 
-The `DocumentorApplication` class is the main entry point. It uses the `JavaParserService` to parse Java source files and generate documentation.
+The `repodocaiagentApplication` class is the main entry point. It uses the `JavaParserService` to parse Java source files and generate documentation.
 
 Here’s a basic example:
 
 ```java
-import com.documentor.agent.DocumentorApplication;
+import com.repodocaiagent.agent.repodocaiagentApplication;
 
 public class Main {
     public static void main(String[] args) {
@@ -72,8 +72,8 @@ public class Main {
         String repoPath = "/path/to/your/java/repository";
 
         // Start the documentation process
-        DocumentorApplication documentor = new DocumentorApplication();
-        documentor.generateDocumentation(repoPath);
+        repodocaiagentApplication repodocaiagent = new repodocaiagentApplication();
+        repodocaiagent.generateDocumentation(repoPath);
 
         System.out.println("Documentation generation complete!");
     }
@@ -98,8 +98,8 @@ public class Main {
 To document a specific Java class, use the `JavaParserService` directly:
 
 ```java
-import com.documentor.agent.service.JavaParserService;
-import com.documentor.agent.model.JavaClassDoc;
+import com.repodocaiagent.agent.service.JavaParserService;
+import com.repodocaiagent.agent.model.JavaClassDoc;
 
 public class ClassDocumentationExample {
     public static void main(String[] args) {
@@ -126,8 +126,8 @@ public class ClassDocumentationExample {
 ### 1. Documenting All Classes in a Repository
 
 ```java
-import com.documentor.agent.service.JavaParserService;
-import com.documentor.agent.model.JavaClassDoc;
+import com.repodocaiagent.agent.service.JavaParserService;
+import com.repodocaiagent.agent.model.JavaClassDoc;
 
 import java.io.File;
 import java.util.List;
@@ -158,7 +158,7 @@ public class RepositoryDocumentationExample {
 ### 2. Using Azure OpenAI for Enhanced Documentation
 
 ```java
-import com.documentor.agent.service.AzureOpenAiService;
+import com.repodocaiagent.agent.service.AzureOpenAiService;
 
 public class OpenAiIntegrationExample {
     public static void main(String[] args) {
@@ -184,7 +184,7 @@ public class OpenAiIntegrationExample {
 1. **Integrate with GitHub**:
    Use the `GitHubService` to fetch repositories directly from GitHub and document them:
    ```java
-   import com.documentor.agent.service.GitHubService;
+   import com.repodocaiagent.agent.service.GitHubService;
 
    public class GitHubIntegrationExample {
        public static void main(String[] args) {

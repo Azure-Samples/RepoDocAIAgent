@@ -2,7 +2,7 @@
 # Class Documentation: `ParameterDoc`
 
 ## Overview
-The `ParameterDoc` class, part of the `com.documentor.agent.model` package, represents a method parameter along with its associated documentation details. This class is designed to encapsulate metadata about a parameter, including its name, type, description, and whether it is required. It is primarily intended for use in tools or systems that generate or manage documentation for Java methods and APIs.
+The `ParameterDoc` class, part of the `com.repodocaiagent.agent.model` package, represents a method parameter along with its associated documentation details. This class is designed to encapsulate metadata about a parameter, including its name, type, description, and whether it is required. It is primarily intended for use in tools or systems that generate or manage documentation for Java methods and APIs.
 
 The class is annotated with Lombok annotations (`@Data` and `@Builder`) to automatically generate boilerplate code such as getters, setters, `toString()`, `equals()`, `hashCode()`, and builder methods, making it easier to use and maintain.
 
@@ -16,7 +16,7 @@ The `ParameterDoc` class does not explicitly define constructors. However, due t
 
 ### Example: Creating an Instance Using the Builder
 ```java
-import com.documentor.agent.model.ParameterDoc;
+import com.repodocaiagent.agent.model.ParameterDoc;
 
 ParameterDoc parameter = ParameterDoc.builder()
     .name("username")
@@ -145,7 +145,7 @@ The `ParameterDoc` class does not explicitly define any methods. However, due to
 
 ### Example: Using `ParameterDoc` in an API Documentation Tool
 ```java
-import com.documentor.agent.model.ParameterDoc;
+import com.repodocaiagent.agent.model.ParameterDoc;
 
 public class ApiDocumentationExample {
     public static void main(String[] args) {
@@ -170,6 +170,6 @@ public class ApiDocumentationExample {
 
 ## Package Import
 ```java
-import com.documentor.agent.model.ParameterDoc;
+import com.repodocaiagent.agent.model.ParameterDoc;
 ```
 ```

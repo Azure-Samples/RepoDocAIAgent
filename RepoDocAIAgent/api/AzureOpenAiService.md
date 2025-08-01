@@ -2,12 +2,12 @@
 # AzureOpenAiService Class Documentation
 
 ## Overview
-The `AzureOpenAiService` class is part of the `com.documentor.agent.service` package and serves as a service for configuring and providing access to Azure OpenAI's Large Language Models (LLMs). It initializes the Azure OpenAI client using credentials stored in a `.env` file and provides access to a configured `ChatLanguageModel` instance for interacting with Azure OpenAI.
+The `AzureOpenAiService` class is part of the `com.repodocaiagent.agent.service` package and serves as a service for configuring and providing access to Azure OpenAI's Large Language Models (LLMs). It initializes the Azure OpenAI client using credentials stored in a `.env` file and provides access to a configured `ChatLanguageModel` instance for interacting with Azure OpenAI.
 
 This class is designed to simplify the integration of Azure OpenAI services into Java applications by abstracting the initialization and configuration process.
 
 ## Class Hierarchy
-- **Package**: `com.documentor.agent.service`
+- **Package**: `com.repodocaiagent.agent.service`
 - **Class Name**: `AzureOpenAiService`
 - **Type**: Concrete class
 - **Inheritance**: None (does not extend any class)
@@ -23,7 +23,7 @@ Creates an instance of `AzureOpenAiService` and initializes the Azure OpenAI cli
 #### Example:
 ```java
 import io.github.cdimascio.dotenv.Dotenv;
-import com.documentor.agent.service.AzureOpenAiService;
+import com.repodocaiagent.agent.service.AzureOpenAiService;
 
 Dotenv dotenv = Dotenv.load();
 AzureOpenAiService azureService = new AzureOpenAiService(dotenv);
@@ -83,7 +83,7 @@ Provides access to the `ChatLanguageModel` instance that was initialized during 
 #### Example:
 ```java
 import io.github.cdimascio.dotenv.Dotenv;
-import com.documentor.agent.service.AzureOpenAiService;
+import com.repodocaiagent.agent.service.AzureOpenAiService;
 import com.langchain4j.model.ChatLanguageModel;
 
 Dotenv dotenv = Dotenv.load();
