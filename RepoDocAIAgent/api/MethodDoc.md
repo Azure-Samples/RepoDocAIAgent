@@ -1,4 +1,4 @@
-```markdown
+
 # Class Documentation: `MethodDoc`
 
 ## Overview

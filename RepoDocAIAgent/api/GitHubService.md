@@ -1,4 +1,4 @@
-```markdown
+
 # GitHubService Class Documentation
 
 ## Overview

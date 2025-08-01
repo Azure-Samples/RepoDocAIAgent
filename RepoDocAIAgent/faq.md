@@ -1,4 +1,4 @@
-```markdown
+
 # AI-Agents-for-Java: FAQ and Troubleshooting Guide
 
 Welcome to the FAQ and Troubleshooting Guide for the **AI-Agents-for-Java** repository. This guide is designed to help you get started, troubleshoot common issues, and optimize your usage of the repository.

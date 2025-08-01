@@ -1,4 +1,4 @@
-```markdown
+
 # Class Documentation: `com.repodocaiagent.agent.repodocaiagentApplication`
 
 ## Class Overview

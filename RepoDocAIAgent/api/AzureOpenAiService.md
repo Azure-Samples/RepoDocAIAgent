@@ -1,4 +1,4 @@
-```markdown
+
 # AzureOpenAiService Class Documentation
 
 ## Overview

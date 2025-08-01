@@ -1,4 +1,4 @@
-```markdown
+
 # AI Agents for Java
 
 AI Agents for Java is an advanced tool designed to autonomously generate high-quality documentation for Java repositories. Leveraging LangChain4J and Azure OpenAI, this project simplifies the process of documenting Java codebases by parsing source files, extracting relevant information, and generating detailed documentation for classes, methods, fields, and parameters.

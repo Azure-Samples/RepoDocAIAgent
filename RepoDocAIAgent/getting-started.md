@@ -1,4 +1,4 @@
-```markdown
+
 # Getting Started with AI-Agents-for-Java
 
 Welcome to the **AI-Agents-for-Java** Getting Started guide! This guide will help you set up, configure, and use the AI Documentation Agent to autonomously generate high-quality documentation for Java repositories. By the end of this guide, you'll be able to parse Java source files, extract documentation details, and generate meaningful documentation using the provided APIs.

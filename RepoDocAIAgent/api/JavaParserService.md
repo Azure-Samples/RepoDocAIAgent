@@ -1,4 +1,4 @@
-```markdown
+
 # JavaParserService API Documentation
 
 ## Class Overview
