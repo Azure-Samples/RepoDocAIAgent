@@ -1,9 +1,9 @@
-# RepoDocAIAgent - Java Repository Documentation Generator
+# RepoDocAIAgent - GitHub Repository Documentation Generator
 
 ## 🚀 Features
 
-- **Automatic Repository Analysis**: Clones and analyzes any public GitHub Java repository
-- **AI-Powered Documentation**: Uses Azure OpenAI to generate intelligent, contextual documentation
+- **Automatic Repository Analysis**: Clones and analyzes any public GitHub repository
+- **AI-Powered Documentation**: Uses LLMs to generate intelligent, contextual documentation
 - **Professional Output**: Creates documentation following industry best practices
 - **Comprehensive Coverage**: Generates project overviews, API docs, getting started guides, and FAQs
 - **Easy Integration**: Simple command-line interface for quick documentation generation
